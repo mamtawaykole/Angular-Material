@@ -1,0 +1,60 @@
+<mat-grid-list cols="12" rowHeight="60px">
+    <mat-grid-tile
+        *ngFor="let tile of tiles"
+        [colspan]="tile.cols"
+        [rowspan]="tile.rows"
+        [style.background]="tile.color">
+      {{tile.text}}
+    </mat-grid-tile>
+  </mat-grid-list>
+
+  <div class="list">
+  <mat-grid-list cols="12" rowHeight="30px">
+    <mat-grid-tile
+        *ngFor="let tile1 of tiles1"
+        [colspan]="tile1.cols"
+        [rowspan]="tile1.rows"
+        [style.background]="tile1.color">
+     
+      <div class="button-row" >
+          
+        <button mat-button> {{tile1.text}}</button></div>
+      
+    </mat-grid-tile>
+  </mat-grid-list>
+  </div>
+  
+
+  <mat-grid-list cols="12" rowHeight="30px">
+    <mat-grid-tile
+        *ngFor="let tile3 of tiles3"
+        [colspan]="tile3.cols"
+        [rowspan]="tile3.rows"
+        [style.background]="tile3.color">
+     
+      <div class="button-row">
+          
+        <button mat-button> {{tile3.text}}</button></div>
+       
+    </mat-grid-tile>
+  </mat-grid-list>
+<div class="list">
+  <mat-grid-list cols="13" rowHeight="30px">
+    <mat-grid-tile
+        *ngFor="let tile2 of tiles2"
+        [colspan]="tile2.cols"
+        [rowspan]="tile2.rows"
+        [style.background]="tile2.color">
+     
+      
+          <div class="button-row" >
+            <div class="list">
+        <button mat-button> {{tile2.text}}</button></div>
+      </div>
+    </mat-grid-tile>
+  </mat-grid-list>
+</div>
+<marquee>Upcoming Event / News will be displayed in this section</marquee>
+<mat-divider></mat-divider>
+<mat-divider></mat-divider>
+<footer></footer>
